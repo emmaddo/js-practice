@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Unique Elements</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+
+    </main>
+    <footer></footer>
+    <script>
+        const data = [
+            {
+                "id": 1,
+                "name": "Addo Prince",
+                "class": "Year 3"
+            },
+
+            {
+                "id": 2,
+                "name": "Addo Rhema",
+                "class": "Year 2",
+            },
+
+             {
+                "id": 3,
+                "name": "Muhammed Deborah",
+                "class": "JS 2",
+            }
+        ];
+     
+        const checkStudent = data.some(x => {return x.name === "Addo Rhema"});
+        const findStudent = data.find(x => x.name == "Addo Rhema");
+        const filterStudent = data.filter(x => x.name === "Addo Rhema");
+
+        console.log(checkStudent);
+        console.log(findStudent);
+        console.log(filterStudent);
+        
+    </script>
+
+    
+</body>
+
+</html>
